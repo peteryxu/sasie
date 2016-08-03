@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31DBA17D1CF09A4D00B7265A /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DBA17C1CF09A4D00B7265A /* RestKit.framework */; };
+		31DBA17F1CF09A5900B7265A /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DBA17E1CF09A5900B7265A /* Starscream.framework */; };
+		31DBA1801CF0A13800B7265A /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 31DBA17E1CF09A5900B7265A /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31DBA1811CF0A13800B7265A /* RestKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 31DBA17C1CF09A4D00B7265A /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31DBA1841CF0A17D00B7265A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DBA1831CF0A17D00B7265A /* Alamofire.framework */; };
+		31DBA1861CF0A18C00B7265A /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DBA1851CF0A18C00B7265A /* Freddy.framework */; };
+		31DBA1871CF0A19100B7265A /* Freddy.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 31DBA1851CF0A18C00B7265A /* Freddy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31DBA1881CF0A19100B7265A /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 31DBA1831CF0A17D00B7265A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A1FCD931BA9D66D0090E1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FCD921BA9D66D0090E1EB /* AppDelegate.swift */; };
+		7A1FCD951BA9D66D0090E1EB /* VoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FCD941BA9D66D0090E1EB /* VoiceViewController.swift */; };
+		7A1FCD981BA9D66D0090E1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1FCD961BA9D66D0090E1EB /* Main.storyboard */; };
+		7A1FCD9A1BA9D66D0090E1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1FCD991BA9D66D0090E1EB /* Assets.xcassets */; };
+		7A1FCD9D1BA9D66D0090E1EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1FCD9B1BA9D66D0090E1EB /* LaunchScreen.storyboard */; };
+		853E18D41D5009CD0057E42B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E18D31D5009CD0057E42B /* CameraViewController.swift */; };
+		853E18D61D5034190057E42B /* AVCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853E18D51D5034190057E42B /* AVCaptureViewController.swift */; };
+		853E18D81D5049DE0057E42B /* AVCapture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853E18D71D5049DE0057E42B /* AVCapture.storyboard */; };
+		85823D391D4AAD1200692CFA /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85823D381D4AAD1200692CFA /* SpeechToTextV1.framework */; };
+		85823D3A1D4AAD1F00692CFA /* SpeechToTextV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 85823D381D4AAD1200692CFA /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		85823D421D4AB36200692CFA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85823D411D4AB36200692CFA /* AVFoundation.framework */; };
+		8594B5791D4D3C5F006A92D3 /* RoboMe.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8594B5771D4D3C5F006A92D3 /* RoboMe.bundle */; };
+		8594B57A1D4D3C5F006A92D3 /* RoboMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8594B5781D4D3C5F006A92D3 /* RoboMe.framework */; };
+		8594B5801D4D3D1F006A92D3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8594B57F1D4D3D1F006A92D3 /* AudioToolbox.framework */; };
+		8594B5821D4D3D2C006A92D3 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8594B5811D4D3D2C006A92D3 /* MediaPlayer.framework */; };
+		8594B5841D4D3D36006A92D3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8594B5831D4D3D36006A92D3 /* Security.framework */; };
+		85EDCAEC1D515EF000849C0E /* Cam.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85EDCAEA1D515EF000849C0E /* Cam.storyboard */; };
+		85EDCAED1D515EF000849C0E /* Voice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85EDCAEB1D515EF000849C0E /* Voice.storyboard */; };
+		85F796971D4C284800A27E64 /* MQTTSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F796961D4C284800A27E64 /* MQTTSwift.swift */; };
+		85F796991D4C502400A27E64 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F796981D4C502400A27E64 /* TextToSpeechV1.framework */; };
+		85F7969A1D4C504A00A27E64 /* TextToSpeechV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 85F796981D4C502400A27E64 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF5C805BD035E64E072E3D5A /* Pods_SpeechToText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 207C1005AE0993890FF68317 /* Pods_SpeechToText.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7A1D81911C8E8EB400E64242 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				85F7969A1D4C504A00A27E64 /* TextToSpeechV1.framework in CopyFiles */,
+				85823D3A1D4AAD1F00692CFA /* SpeechToTextV1.framework in CopyFiles */,
+				31DBA1871CF0A19100B7265A /* Freddy.framework in CopyFiles */,
+				31DBA1881CF0A19100B7265A /* Alamofire.framework in CopyFiles */,
+				31DBA1801CF0A13800B7265A /* Starscream.framework in CopyFiles */,
+				31DBA1811CF0A13800B7265A /* RestKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		207C1005AE0993890FF68317 /* Pods_SpeechToText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechToText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2797B6D3F69FCDCE58C45D62 /* Pods-SpeechToText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechToText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechToText/Pods-SpeechToText.debug.xcconfig"; sourceTree = "<group>"; };
+		31DBA17C1CF09A4D00B7265A /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		31DBA17E1CF09A5900B7265A /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		31DBA1831CF0A17D00B7265A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		31DBA1851CF0A18C00B7265A /* Freddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Freddy.framework; path = Carthage/Build/iOS/Freddy.framework; sourceTree = "<group>"; };
+		5D898678E0BD136821F03FF1 /* Pods-SpeechToText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechToText.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechToText/Pods-SpeechToText.release.xcconfig"; sourceTree = "<group>"; };
+		7A1FCD8F1BA9D66D0090E1EB /* Sasie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sasie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1FCD921BA9D66D0090E1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A1FCD941BA9D66D0090E1EB /* VoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceViewController.swift; sourceTree = "<group>"; };
+		7A1FCD971BA9D66D0090E1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A1FCD991BA9D66D0090E1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A1FCD9C1BA9D66D0090E1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A1FCD9E1BA9D66D0090E1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		853E18D31D5009CD0057E42B /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		853E18D51D5034190057E42B /* AVCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureViewController.swift; sourceTree = "<group>"; };
+		853E18D71D5049DE0057E42B /* AVCapture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AVCapture.storyboard; sourceTree = "<group>"; };
+		85823D381D4AAD1200692CFA /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		85823D411D4AB36200692CFA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8594B5771D4D3C5F006A92D3 /* RoboMe.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RoboMe.bundle; sourceTree = "<group>"; };
+		8594B5781D4D3C5F006A92D3 /* RoboMe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RoboMe.framework; sourceTree = "<group>"; };
+		8594B57F1D4D3D1F006A92D3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8594B5811D4D3D2C006A92D3 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		8594B5831D4D3D36006A92D3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8594B5851D4D3D9E006A92D3 /* Sasie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sasie-Bridging-Header.h"; sourceTree = "<group>"; };
+		85EDCAEA1D515EF000849C0E /* Cam.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cam.storyboard; sourceTree = "<group>"; };
+		85EDCAEB1D515EF000849C0E /* Voice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Voice.storyboard; sourceTree = "<group>"; };
+		85F796961D4C284800A27E64 /* MQTTSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTSwift.swift; sourceTree = "<group>"; };
+		85F796981D4C502400A27E64 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A1FCD8C1BA9D66D0090E1EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85823D421D4AB36200692CFA /* AVFoundation.framework in Frameworks */,
+				31DBA1861CF0A18C00B7265A /* Freddy.framework in Frameworks */,
+				85823D391D4AAD1200692CFA /* SpeechToTextV1.framework in Frameworks */,
+				85F796991D4C502400A27E64 /* TextToSpeechV1.framework in Frameworks */,
+				31DBA17F1CF09A5900B7265A /* Starscream.framework in Frameworks */,
+				8594B57A1D4D3C5F006A92D3 /* RoboMe.framework in Frameworks */,
+				8594B5821D4D3D2C006A92D3 /* MediaPlayer.framework in Frameworks */,
+				31DBA17D1CF09A4D00B7265A /* RestKit.framework in Frameworks */,
+				8594B5801D4D3D1F006A92D3 /* AudioToolbox.framework in Frameworks */,
+				31DBA1841CF0A17D00B7265A /* Alamofire.framework in Frameworks */,
+				8594B5841D4D3D36006A92D3 /* Security.framework in Frameworks */,
+				DF5C805BD035E64E072E3D5A /* Pods_SpeechToText.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		176E48F009B092CB8B36B74B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2797B6D3F69FCDCE58C45D62 /* Pods-SpeechToText.debug.xcconfig */,
+				5D898678E0BD136821F03FF1 /* Pods-SpeechToText.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A1FCD861BA9D66D0090E1EB = {
+			isa = PBXGroup;
+			children = (
+				E1071B8A1C1C7BAD00E19A28 /* Frameworks */,
+				7A1FCD911BA9D66D0090E1EB /* SpeechToText */,
+				7A1FCD901BA9D66D0090E1EB /* Products */,
+				176E48F009B092CB8B36B74B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		7A1FCD901BA9D66D0090E1EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A1FCD8F1BA9D66D0090E1EB /* Sasie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A1FCD911BA9D66D0090E1EB /* SpeechToText */ = {
+			isa = PBXGroup;
+			children = (
+				85EDCAEE1D51634C00849C0E /* Voice */,
+				85EDCAE91D515DF100849C0E /* BuiltInCam */,
+				85EDCAE81D515D8700849C0E /* AVCapture */,
+				7A1FCD921BA9D66D0090E1EB /* AppDelegate.swift */,
+				85F796961D4C284800A27E64 /* MQTTSwift.swift */,
+				7A1FCD961BA9D66D0090E1EB /* Main.storyboard */,
+				7A1FCD991BA9D66D0090E1EB /* Assets.xcassets */,
+				7A1FCD9B1BA9D66D0090E1EB /* LaunchScreen.storyboard */,
+				7A1FCD9E1BA9D66D0090E1EB /* Info.plist */,
+				8594B5851D4D3D9E006A92D3 /* Sasie-Bridging-Header.h */,
+			);
+			path = SpeechToText;
+			sourceTree = "<group>";
+		};
+		8594B5761D4D3C5F006A92D3 /* RoboMe-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				8594B5771D4D3C5F006A92D3 /* RoboMe.bundle */,
+				8594B5781D4D3C5F006A92D3 /* RoboMe.framework */,
+			);
+			name = "RoboMe-iOS-SDK";
+			path = "../RoboMe-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		85EDCAE81D515D8700849C0E /* AVCapture */ = {
+			isa = PBXGroup;
+			children = (
+				853E18D51D5034190057E42B /* AVCaptureViewController.swift */,
+				853E18D71D5049DE0057E42B /* AVCapture.storyboard */,
+			);
+			name = AVCapture;
+			sourceTree = "<group>";
+		};
+		85EDCAE91D515DF100849C0E /* BuiltInCam */ = {
+			isa = PBXGroup;
+			children = (
+				85EDCAEA1D515EF000849C0E /* Cam.storyboard */,
+				853E18D31D5009CD0057E42B /* CameraViewController.swift */,
+			);
+			name = BuiltInCam;
+			sourceTree = "<group>";
+		};
+		85EDCAEE1D51634C00849C0E /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				7A1FCD941BA9D66D0090E1EB /* VoiceViewController.swift */,
+				85EDCAEB1D515EF000849C0E /* Voice.storyboard */,
+			);
+			name = Voice;
+			sourceTree = "<group>";
+		};
+		E1071B8A1C1C7BAD00E19A28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8594B5831D4D3D36006A92D3 /* Security.framework */,
+				8594B5811D4D3D2C006A92D3 /* MediaPlayer.framework */,
+				8594B57F1D4D3D1F006A92D3 /* AudioToolbox.framework */,
+				8594B5761D4D3C5F006A92D3 /* RoboMe-iOS-SDK */,
+				85F796981D4C502400A27E64 /* TextToSpeechV1.framework */,
+				85823D411D4AB36200692CFA /* AVFoundation.framework */,
+				85823D381D4AAD1200692CFA /* SpeechToTextV1.framework */,
+				31DBA1851CF0A18C00B7265A /* Freddy.framework */,
+				31DBA1831CF0A17D00B7265A /* Alamofire.framework */,
+				31DBA17E1CF09A5900B7265A /* Starscream.framework */,
+				31DBA17C1CF09A4D00B7265A /* RestKit.framework */,
+				207C1005AE0993890FF68317 /* Pods_SpeechToText.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A1FCD8E1BA9D66D0090E1EB /* Sasie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1FCDB71BA9D66D0090E1EB /* Build configuration list for PBXNativeTarget "Sasie" */;
+			buildPhases = (
+				40225A5FF4D9CB0B9896378B /* 📦 Check Pods Manifest.lock */,
+				7A1FCD8B1BA9D66D0090E1EB /* Sources */,
+				7A1FCD8C1BA9D66D0090E1EB /* Frameworks */,
+				7A1FCD8D1BA9D66D0090E1EB /* Resources */,
+				7A1D81911C8E8EB400E64242 /* CopyFiles */,
+				CF88D3FFFA9F6324E664FC3D /* 📦 Embed Pods Frameworks */,
+				D790236F6D3F54633331EF95 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sasie;
+			productName = SpeechRecognition;
+			productReference = 7A1FCD8F1BA9D66D0090E1EB /* Sasie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A1FCD871BA9D66D0090E1EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = MIL;
+				TargetAttributes = {
+					7A1FCD8E1BA9D66D0090E1EB = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = YA386LD63J;
+					};
+				};
+			};
+			buildConfigurationList = 7A1FCD8A1BA9D66D0090E1EB /* Build configuration list for PBXProject "SpeechToText" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A1FCD861BA9D66D0090E1EB;
+			productRefGroup = 7A1FCD901BA9D66D0090E1EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A1FCD8E1BA9D66D0090E1EB /* Sasie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A1FCD8D1BA9D66D0090E1EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85EDCAEC1D515EF000849C0E /* Cam.storyboard in Resources */,
+				853E18D81D5049DE0057E42B /* AVCapture.storyboard in Resources */,
+				85EDCAED1D515EF000849C0E /* Voice.storyboard in Resources */,
+				7A1FCD9D1BA9D66D0090E1EB /* LaunchScreen.storyboard in Resources */,
+				8594B5791D4D3C5F006A92D3 /* RoboMe.bundle in Resources */,
+				7A1FCD9A1BA9D66D0090E1EB /* Assets.xcassets in Resources */,
+				7A1FCD981BA9D66D0090E1EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40225A5FF4D9CB0B9896378B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF88D3FFFA9F6324E664FC3D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechToText/Pods-SpeechToText-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D790236F6D3F54633331EF95 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechToText/Pods-SpeechToText-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A1FCD8B1BA9D66D0090E1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853E18D61D5034190057E42B /* AVCaptureViewController.swift in Sources */,
+				85F796971D4C284800A27E64 /* MQTTSwift.swift in Sources */,
+				853E18D41D5009CD0057E42B /* CameraViewController.swift in Sources */,
+				7A1FCD951BA9D66D0090E1EB /* VoiceViewController.swift in Sources */,
+				7A1FCD931BA9D66D0090E1EB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7A1FCD961BA9D66D0090E1EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A1FCD971BA9D66D0090E1EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A1FCD9B1BA9D66D0090E1EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A1FCD9C1BA9D66D0090E1EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A1FCDB51BA9D66D0090E1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A1FCDB61BA9D66D0090E1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A1FCDB81BA9D66D0090E1EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2797B6D3F69FCDCE58C45D62 /* Pods-SpeechToText.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = armv7;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build",
+					"/Users/peteryxu/CODE/0-WooWee/RoboMe-iOS-SDK",
+				);
+				HEADER_SEARCH_PATHS = (
+					"/Users/peteryxu/CODE/0-WooWee/RoboMe-iOS-SDK/RoboMe.framework/Headers",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				INFOPLIST_FILE = SpeechToText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks /Users/peteryxu/CODE/0-WooWee/RoboMe-iOS-SDK";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"MQTTClient\"",
+					"-ObjC",
+					"-l\"stdc++.6\"",
+					"-l\"z\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peteryxu.Sasie;
+				PRODUCT_NAME = Sasie;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeechToText/Sasie-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		7A1FCDB91BA9D66D0090E1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D898678E0BD136821F03FF1 /* Pods-SpeechToText.release.xcconfig */;
+			buildSettings = {
+				ARCHS = armv7;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build",
+					"/Users/peteryxu/CODE/0-WooWee/RoboMe-iOS-SDK",
+				);
+				HEADER_SEARCH_PATHS = (
+					"/Users/peteryxu/CODE/0-WooWee/RoboMe-iOS-SDK/RoboMe.framework/Headers",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				INFOPLIST_FILE = SpeechToText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks /Users/peteryxu/CODE/0-WooWee/RoboMe-iOS-SDK";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"MQTTClient\"",
+					"-ObjC",
+					"-l\"stdc++.6\"",
+					"-l\"z\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peteryxu.Sasie;
+				PRODUCT_NAME = Sasie;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeechToText/Sasie-Bridging-Header.h";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A1FCD8A1BA9D66D0090E1EB /* Build configuration list for PBXProject "SpeechToText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1FCDB51BA9D66D0090E1EB /* Debug */,
+				7A1FCDB61BA9D66D0090E1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A1FCDB71BA9D66D0090E1EB /* Build configuration list for PBXNativeTarget "Sasie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1FCDB81BA9D66D0090E1EB /* Debug */,
+				7A1FCDB91BA9D66D0090E1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A1FCD871BA9D66D0090E1EB /* Project object */;
+}
